@@ -2,7 +2,7 @@
 
 ## Tools
 
-Java - programming language
+Java - programming language (can be downloaded here https://www.java.com/en/)
 
 Selenium - Browser automtion
 
@@ -12,27 +12,28 @@ Junit - Test Runner
 
 Maven - Dependencies and build management
 
-Itellij - IDE
+Itellij Community Edition - IDE (can be downloaded here https://www.jetbrains.com/idea/)
 
 ## Running the tests
 
-1. Open the project in Intellij
-2. Right-click the 'TestRunner.java' class
-3. Select **Run 'TestRunner'**
+1. Clone the repository ```git clone git@github.com:Macca1511/website-tech-test.git```
+2. Open the project in Intellij
+3. Right-click the 'TestRunner.java' class '\src\test\java\runner\TestRunner'
+4. Select **Run 'TestRunner'**
  
 **From the command line (Maven)**
 
 All tests tagged as @test will run when executing the following command:
 
-mvn test
+```mvn test```
 
 By default, this will run all the tests in Chrome. If you wish to run them using Edge or Firefox, use the following:
 
-mvn test -DbrowserProfile=edge
+```mvn test -DbrowserProfile=edge```
 
 or
 
-mvn test -DbrowserProfile=firefox
+```mvn test -DbrowserProfile=firefox```
 
 If having issues you can also change the Config file to default to the browser you wish to use
 
@@ -46,13 +47,16 @@ If having issues you can also change the Config file to default to the browser y
 
 To run a specific tag use the following command:
 
-'mvn test -Dcucumber.filter.tags="@tagname"'
+```mvn test -Dcucumber.filter.tags="@tagname"```
 
 ## Reports
 
 Reports are generated after each run and can be found in the following folder within the project:
 
-target/cucumber-report.html
+website-tech-test\target\cucumber-report.html
+
+<img width="2956" height="1700" alt="image" src="https://github.com/user-attachments/assets/0a23ccc2-38cc-4525-9eff-17e3ed0064ba" />
+
 
 ## Accessibility
 
@@ -69,17 +73,19 @@ In order to run this test ensure you have Lighthouse installed via the following
 
 **Confirm installation**
 
-```Lighthouse - - version``` (version number should show if installed e.g. 12.7.1)
+```Lighthouse --version``` (version number should show if installed e.g. 12.7.1)
 
 You should now be able to run the accessibility test.
 
 ### Important
 
-Before running amend the ```Accessibility.java``` file to point to where Lighthouse was installed. 
+Before running amend the ```Accessibility.java``` file to point to where Lighthouse was installed (\src\test\java\stepdefecnitions\Accessibility) . 
 
 e.g. ```String lighthousePath = "C:\\Users\\**<Username>**\\AppData\\Roaming\\npm\\lighthouse.cmd";```
 
-**Not running**
+**Troubleshooting**
+
+Lighthouse not running?
 
 If it doesn’t run (e.g. command not found)
 
@@ -97,7 +103,7 @@ d.	Click New, and paste the path
 
 e.	Click OK, then restart your terminal or the IDE (e.g.Intellij)
 
-On macOS/Linus:
+**On macOS/Linus:**
 
 Add this line to your
 
@@ -112,6 +118,14 @@ Then run:
 **Bash**
 
 ```source ~/ .bashrc or ~/ .zshrc``` (depending on your shell) 
+
+**Accessibility Report**
+
+Once the accessibility tests have been run a report is generated within the project
+
+website-tech-test\automationintesting.online_2025-07-10_11-51-21.report.html
+
+<img width="2975" height="1664" alt="image" src="https://github.com/user-attachments/assets/8e5be590-f2d5-465f-857f-61343dbca28d" />
 
 ## Issues
 
