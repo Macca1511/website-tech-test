@@ -23,6 +23,6 @@ Feature: Error validation
       | name       | email             | phone       | subject         | message                 | error_message                                  |
       | blank      | test@test.nowhere | 01234567890 | testing subject | testing sending contact | Name may not be blank                          |
       | Joe Bloggs | blank             | 01234567890 | testing subject | testing sending contact | Email may not be blank                         |
-      | Joe Bloggs | test@test.nowhere | 01234567890 | testing subject | blank                   | Message must be between 20 and 2000 characters.|
+      | Joe Bloggs | test@test.nowhere | 01234567890 | testing subject | test                    | Message must be between 20 and 2000 characters.|
       | Joe Bloggs | test              | 01234567890 | testing subject | testing sending contact | must be a well-formed email address            |
       | Joe Bloggs | test@test.nowhere | 012345      | testing subject | testing sending contact | Phone must be between 11 and 21 characters.    |
