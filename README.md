@@ -50,7 +50,7 @@ To run a specific tag use the following command:
 
 ## Reports
 
-Reports are generated and can be found in the following folder within the project:
+Reports are generated after each run and can be found in the following folder within the project:
 
 target/cucumber-report.html
 
@@ -60,7 +60,7 @@ The accessibility tests currently scan the webpages using Lighthouse. This test 
 
 **Pre-requisite**
 
-Ensure you have node.js (https://nodejs.org/en) installed before installing Lighthouse. (check via ```Bash npm -v```)
+Ensure you have node.js (https://nodejs.org/en) installed before installing Lighthouse. (check via Bash ```npm -v```)
 In order to run this test ensure you have Lighthouse installed via the following method:
 
 **Using Bash**
@@ -75,9 +75,9 @@ You should now be able to run the accessibility test.
 
 ### Important
 
-Before running amend the ```Accessibility.java``` file to point to Lighthouse. 
+Before running amend the ```Accessibility.java``` file to point to where Lighthouse was installed. 
 
-e.g. ```String lighthousePath = "C:\\Users\\<Username>\\AppData\\Roaming\\npm\\lighthouse.cmd";```
+e.g. ```String lighthousePath = "C:\\Users\\**<Username>**\\AppData\\Roaming\\npm\\lighthouse.cmd";```
 
 **Not running**
 
