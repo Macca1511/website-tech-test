@@ -1,6 +1,6 @@
-#Shady Meadows B&B Test Automation#
+#Shady Meadows B&B Test Automation
 
-##Tools##
+##Tools
 
 Java - programming language
 
@@ -14,7 +14,7 @@ Maven - Dependencies and build management
 
 Itellij - IDE
 
-##Running the tests##
+##Running the tests
 
 1. Open the project in Intellij
 2. Right-click the 'TestRunner.java' class
@@ -38,7 +38,7 @@ If having issues you can also change the Config file to default to the browser y
 
 ```e.g. return props.getProperty("browser", "edge");```
 
-##Tags##
+##Tags
 
 @test – will run by default
 
@@ -48,13 +48,13 @@ To run a specific tag use the following command:
 
 'mvn test -Dcucumber.filter.tags="@tagname"'
 
-##Reports##
+##Reports
 
 Reports are generated and can be found in the following folder within the project:
 
 target/cucumber-report.html
 
-##Accessibility##
+##Accessibility
 
 The accessibility tests currently scan the webpages using Lighthouse. This test is currently tagged as @defect, therefore does not get run as part of the build. This is because the accessibility score is below 80.
 
@@ -73,7 +73,9 @@ In order to run this test ensure you have Lighthouse installed via the following
 
 You should now be able to run the accessibility test.
 
-**###Important###** - before running amend the ```Accessibility.java``` file to point to Lighthouse. 
+###Important
+
+before running amend the ```Accessibility.java``` file to point to Lighthouse. 
 
 e.g. ```String lighthousePath = "C:\\Users\\<Username>\\AppData\\Roaming\\npm\\lighthouse.cmd";```
 
