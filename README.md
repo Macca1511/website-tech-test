@@ -131,4 +131,4 @@ website-tech-test\automationintesting.online_2025-07-10_11-51-21.report.html
 
 Unfortunately I wasn't able to get the cross browser testing to run locally but would fix this issue with more time.
 
-The tests currently add ```WebDriverWait``` in the step definition files. This was done to counteract the fact the website takes a while to load but through further iterations and better performance these wait can be removed.
+The tests currently add ```WebDriverWait``` in the step definition files. This was done to counteract the fact the website takes a while to load but through further iterations and better performance these waits can be removed.
