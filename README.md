@@ -78,7 +78,7 @@ You should now be able to run the accessibility test.
 
 ### Important
 
-Before running amend the ```Accessibility.java``` file to point to where Lighthouse was installed (\src\test\java\stepdefecnitions\Accessibility) . 
+Before running amend the ```Accessibility.java``` file to point to where Lighthouse was installed (\src\test\java\stepdefinitions\Accessibility) . 
 
 e.g. ```String lighthousePath = "C:\\Users\\**<Username>**\\AppData\\Roaming\\npm\\lighthouse.cmd";```
 
@@ -92,7 +92,7 @@ Add npm global to your system path (only if Lighthouse doesn’t work)
 
 **On Windows:**
 
-a.	Copy path from npm bin -g (e.g. \Users\YourName\AppData\Roaming\npm)
+a.	Copy path from ```npm bin -g``` (e.g. \Users\YourName\AppData\Roaming\npm)
 
 b.	Open System Properties > Environment Variables
 
@@ -110,7 +110,7 @@ Add this line to your
 
 **Bash**
 
-```Export PATH=”$PATH: $(npm bin -g)”```
+```Export PATH=”$PATH: $(npm bin -g)"```
 
 Then run:
 
