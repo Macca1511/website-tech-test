@@ -55,8 +55,7 @@ Reports are generated after each run and can be found in the following folder wi
 
 website-tech-test\target\cucumber-report.html
 
-<img width="2956" height="1700" alt="image" src="https://github.com/user-attachments/assets/0a23ccc2-38cc-4525-9eff-17e3ed0064ba" />
-
+<img width="2987" height="893" alt="image" src="https://github.com/user-attachments/assets/7eb76601-8a06-4a7e-b0ed-5922b408e3e5" />
 
 ## Accessibility
 
